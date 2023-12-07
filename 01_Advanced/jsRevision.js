@@ -88,3 +88,17 @@ var button = document.querySelector("button");
 button.addEventListener("click", function(){
     this.style.color = "red";
 });
+
+function newb(val1, val2, val3){
+    console.log(this);
+}
+var obj = {age:24}
+
+//call
+newb.call(obj,1,2,3);
+//apply
+newb.apply(obj,[1,2,3])
+
+//binding
+var bindedfnc = newb.bind(obj,1,2,3);
+bindedfnc();
