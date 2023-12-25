@@ -94,3 +94,26 @@ const arr = [1, 2, 3, 4, 5, 6, 5, 8, 9, 5];
 // const words = ['Hello', ' ', 'Kamal', '!',' ', 'I',' ', 'am',' ', 'Rohit',' ', 'Karki', '.'];
 // const concatenatedString = words.reduce((acc, word) => acc + word, '');
 // console.log(concatenatedString);
+
+// ##forEach method##
+//The forEach() method is used to execute a provided function once for each element in an array, in order.
+
+// let arrobj = [
+//     {
+//         name:'Rohit',
+//         age:24
+//     },
+//     {
+//         name: 'Kamal',
+//         age: 25
+//     },
+//     {
+//         name: 'Lalit',
+//         age: 23
+//     }
+
+// ];
+
+// arrobj.forEach((obj) => {
+//     console.log(` Name: ${obj.name} and Age: ${obj.age}`);
+// });
