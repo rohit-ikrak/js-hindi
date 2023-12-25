@@ -63,3 +63,34 @@ const arr = [1, 2, 3, 4, 5, 6, 5, 8, 9, 5];
 
 // filter() map() reduce() methods
 
+// ##filter##
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+//provides array elements greater than 3
+// const filterArr1 = arr.filter((item) => item>3);
+// console.log(filterArr1);
+
+// //provides even array from arr array
+// const evenarr = arr.filter( (item) => {
+//     return (item%2==0);
+// })
+// console.log(evenarr);
+
+// ##map##
+// The map() method creates a new array with the results of calling a provided function on every element in the array.
+// const maparr1 = arr.map( (item) => {
+//     return (item * 3) + 23;
+// });
+// console.log(maparr1);
+
+// ##reduce##
+//The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+// const reducearr = arr.reduce( (acc, arr) => {
+//     console.log(`${acc} + ${arr} is ${arr+acc}`);
+//     return arr+acc;
+// },0);
+// console.log(reducearr);
+
+// Concatenate strings
+// const words = ['Hello', ' ', 'Kamal', '!',' ', 'I',' ', 'am',' ', 'Rohit',' ', 'Karki', '.'];
+// const concatenatedString = words.reduce((acc, word) => acc + word, '');
+// console.log(concatenatedString);
