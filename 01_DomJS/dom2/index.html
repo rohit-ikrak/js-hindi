@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // console.log("hello")
+
+    const div = document.createElement("div");
+    div.className="title";
+    div.id = Math.round(Math.random() * 100 + 1)
+    console.log(div.innerText);
+    div.setAttribute("class", "title");
+    div.style.backgroundColor = "transparent";
+    div.style.padding = "12px";
+    div.style.fontSize = "30px";
+    div.style.fontStyle = "italic"
+    div.style.fontWeight = "bold";
+    div.style.textAlign = "center";
+    div.style.backgroundColor = "red"
+    div.style.height = "80px";
+
+
+    div.innerText = "Title Added. " //directly changes the content between tags
+
+    //this code below is to create text
+    addtext = document.createTextNode(" But this is added using createTextNode() method")
+    div.appendChild(addtext);   //appendChild just appends the text saved in variable to the elements child scope
+
+    document.body.appendChild(div); //now we can append it inside body of the document
+
+
+    const div1 = document.createElement("div1");
+    
+    div1.id = "space";
+    div1.class = "space";
+    div1.style.backgroundColor = "blue";
+    document.body.appendChild(div1); //
+
+
+
+
+    const div2 = document.createElement("div");
+    div2.setAttribute("id", "content");
+    div2.setAttribute("class", "content"); 
+    div2.style.color = "red";
+    div2.style.fontFamily = "bold";
+    div2.style.fontSize = "15px";
+    div2.style.fontStyle = "italic"
+    div2.style.backgroundColor = "yellow"
+    div2.style.height = "40px";
+
+    div2.innerText = "This is the content you are looking for as it is inside second div which is just below main div."
+    addtext = document.createTextNode(div2.innerText);
+    document.body.appendChild(div2); //now we can append it inside body of the document
+
+    console.log(document);
+
+</script>
